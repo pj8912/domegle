@@ -8,19 +8,41 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
 </head>
-<body>
-    <div class="wrapper">
-      <h1>Welcome to Omegle Clone</h1>
-      <div class="chat-window">
-        <div class="messages"></div>
-        <div class="input-box">
-          <input type="text" placeholder="Type your message...">
-          <button class="send-btn">Send</button>
-        </div>
-      </div>
-      <button class="start-chat-btn">Start Chat</button>
+<body style="background: whitesmoke;">
+ <nav class="headers">
+    <div class="heading">P2P Omegle</div>
+ </nav>
+  <div class="wrapper">
+  
+    <div class="vid-div1">
+    vid1**
+  </div>
+  
+  <div class="vid-div2">
+    vid2**
+  </div>
+
+  <div class="chatbox">
+
+    <div class="chats">
+      Stranger: Hi
+      <br>
+      You: Hi
     </div>
-    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+   
+    <div style="width:100%;display:block;display:flex;flex-direction:row;margin-top:550px;">
+      <button type="submit" onclick="sendMessage()" id="msg-btn" style="padding:5px;width:10%;background: dodgerblue; color: white;border:none;">
+        New
+      </button>
+
+      <input type="text" id="msg" name="message" style="background:whitesmoke;width:80%;padding:10px;border:none">
+      <button type="submit" onclick="sendMessage()" id="msg-btn" style="padding:5px;width:10%;background: dodgerblue; color: white;border:none;">send</button>
+      <!-- <input type="hidden" value="<?php echo $_REQUEST['oid'];  ?>" id="other_id"> -->
+    </div>
+  </div>
+  
+
+ </div>
 
 </body>
 </html>
