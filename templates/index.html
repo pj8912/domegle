@@ -9,8 +9,18 @@
 
 </head>
 <body>
-    
-Hello!
-    
+    <div class="wrapper">
+      <h1>Welcome to Omegle Clone</h1>
+      <div class="chat-window">
+        <div class="messages"></div>
+        <div class="input-box">
+          <input type="text" placeholder="Type your message...">
+          <button class="send-btn">Send</button>
+        </div>
+      </div>
+      <button class="start-chat-btn">Start Chat</button>
+    </div>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
 </body>
 </html>
