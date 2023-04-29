@@ -5,18 +5,19 @@ body {
   font-size: 16px;
 }
 
-.headers{
-  background:white;
+.headers {
+  background: white;
   display: flex;
   font-size: 14px;
-  padding:3px;
-  width:100%;
+  padding: 3px;
+  width: 100%;
   color: black;
 
 }
-.heading{
+
+.heading {
   font-size: 30px;
-  margin:10px;
+  margin: 10px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -28,34 +29,111 @@ body {
   background: whitesmoke;
   grid-gap: 0.5em;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: minmax(150px,inherit);
+  grid-template-rows: minmax(150px, inherit);
 
 }
 
-.vid-div1{
+.vid-div1 {
   background: #ddd;
   grid-column: 1/2;
   grid-row: 1;
   height: 300px;
 }
-.vid-div2{
+
+.vid-div2 {
   background: #ddd;
   grid-row: 2;
   grid-column: 1/2;
   height: 300px;
 }
-.chatbox{
-  grid-column:2/4;
+
+.chatbox {
+  grid-column: 2/4;
   background: white;
   grid-row: 1/4;
   height: 620px;
-  padding:7px
+  padding: 7px
+}
+
+.chats {
+  margin-top: 1px;
 
 }
-.chats{
-  margin-top:1px;
-  
+
+.start {
+  margin: 0 auto;
+  margin-top: 100px;
+  text-align: center;
+  padding: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+
 }
+
+.main-title {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.descrip {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.main-buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  grid-gap: 1em;
+  align-items: center;
+  justify-content: center;
+}
+
+.start-chat-button {
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+  background-color: dodgerblue;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+}
+
+.start-chat-button .button-text {
+  margin-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: bolder;
+}
+
+
+.settings-button {
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+}
+
+.settings-button .button-text {
+  margin-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: bolder;
+}
+
+.start-chat-button,
+.settings-button:hover {
+  cursor: pointer
+}
+
 /* .inputbox{} */
 
 /* .chat-window {
@@ -100,4 +178,3 @@ body {
   padding: 10px 20px;
   cursor: pointer;
 } */
-

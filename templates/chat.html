@@ -1,0 +1,48 @@
+{% extends 'wrapper.html' %}
+
+{% block content %}
+
+
+</head>
+
+<body style="background: whitesmoke;">
+  <nav class="headers">
+    <div class="heading">Domegle</div>
+  </nav>
+  <div class="wrapper">
+
+    <div class="vid-div1">
+      vid1**
+    </div>
+
+    <div class="vid-div2">
+      vid2**
+    </div>
+
+    <div class="chatbox">
+
+      <div class="chats">
+        Stranger: Test
+        <br>
+        You: Test
+      </div>
+
+      <div style="width:100%;display:block;display:flex;flex-direction:row;margin-top:550px;">
+        <button type="submit" onclick="sendMessage()" id="msg-btn"
+          style="padding:5px;width:10%;background: dodgerblue; color: white;border:none;">
+          <i class="fas fa-arrow-circle-right"></i>	
+          Next
+        </button>
+
+        <input type="text" id="msg" name="message" style="background:whitesmoke;width:80%;padding:10px;border:none">
+        <button type="submit" onclick="sendMessage()" id="msg-btn"
+          style="padding:5px;width:10%;background: dodgerblue; color: white;border:none;">
+          <i class="fa-solid fa-paper-plane"></i>
+          send</button>
+      </div>
+    </div>
+
+
+  </div>
+
+  {% endblock %}
